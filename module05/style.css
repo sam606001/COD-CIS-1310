@@ -1,0 +1,86 @@
+/* Remove margin from the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style header */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Style main content */
+main {
+    width: calc(70% - 1px); /* 70% width minus border */
+    float: left; /* Align to the left */
+    padding: 1rem;
+    border-right: 1px solid black; /* 1px right border */
+    color: #666;
+    font-size: 18px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: square; /* Change bullet style */
+}
+
+nav ul li {
+    color: blue; /* Bullet color */
+}
+
+/* Navigation link colors */
+nav a:link {
+    color: darkblue;
+}
+
+nav a:visited {
+    color: purple;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a:active {
+    color: orange;
+}
+
+/* Style the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0073a8;
+}
+
+/* Style aside */
+aside {
+    width: 30%; /* Set aside to take 30% width */
+    float: right; /* Align to the right */
+    padding: 1rem;
+}
+
+/* Style footer */
+footer {
+    background-color: #4CAF50; /* Same as header */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
