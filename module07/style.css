@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+figure {
+    max-width: 80%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
