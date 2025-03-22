@@ -1,82 +1,178 @@
-/* Remove margin from the body */
+/*--------------------------------------------------------------
+selector {
+	layout(position)
+	
+	content(text)
+	
+	design(background)
+	
+	other(z-index)
+}
+----------------------------------------------------------------
+>>> COLORS:	  
+----------------------------------------------------------------*/
+:root {
+	--color-variable: #ffffff;
+}
+
+/*
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Universal
+# General Elements
+# Modal Navigation
+# Navigation
+# Header Area
+# Content Area
+# Footer Area
+# Reusable Classes
+# Other
+# Templates
+# Media Queries
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Universal
+--------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav ul {
+    list-style-type: square;
+    padding: 0;
     margin: 0;
 }
 
-/* Change the visible bullets from the navigation to something other than a circle */
-nav ul {
-    list-style-type: square; /* You can choose 'square', 'disc', or another type */
-}
-
-/* Change the color of the bullets to be different from the text */
 nav ul li {
-    color: #333; /* Set text color */
+    display: inline-block;
+    margin-right: 20px;
 }
 
-/* Change the nav link colors for active, hover, and visited states */
 nav ul li a {
-    color: #0066cc; /* Default link color (blue) */
-    text-decoration: none; /* Remove underline from links */
-}
-
-nav ul li a:active {
-    color: #ff0000; /* Active link color (red) */
+    color: #0066cc;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #ff6600; /* Hover link color (orange) */
+    color: #ff6600;
 }
 
 nav ul li a:visited {
-    color: #999999; /* Visited link color (gray) */
+    color: #999999;
 }
 
-/* Set the header to be a different color than the main */
+nav ul li a:active {
+    color: #ff0000;
+}
+
+/*--------------------------------------------------------------
+# Header Area
+--------------------------------------------------------------*/
 header {
-    background-color: #4CAF50; /* Green background for header */
+    background-color: #4CAF50;
     padding: 20px;
-    color: white; /* White text in the header */
+    color: white;
+    text-align: center;
 }
 
-/* Give the main element the following settings */
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
 main {
-    width: calc(70% - 1px); /* 70% width minus 1px for the right border */
-    float: left; /* Align the main content to the left */
-    padding: 1rem; /* Add padding to the main content */
-    border-right: 1px solid #ccc; /* Add a right border */
+    width: calc(70% - 1px);
+    float: left;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
 }
 
-/* Give the aside elements the following settings */
-aside {
-    width: 30%; /* Set aside to take up 30% of the width */
-    float: right; /* Align aside to the right */
-    padding: 1rem; /* Add padding to the aside */
+article {
+    margin-bottom: 20px;
 }
 
-/* Footer settings */
+article h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+article p {
+    font-size: 1rem;
+    color: #666;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
 footer {
-    background-color: #4CAF50; /* Same background color as the header */
-    text-align: center; /* Center the text in the footer */
+    background-color: #4CAF50;
     padding: 10px;
-    color: white; /* White text in the footer */
+    text-align: center;
+    color: white;
 }
 
-/* Clear the float so the page layout isn't disrupted */
-body::after {
-    content: "";
-    display: block;
-    clear: both;
+/*--------------------------------------------------------------
+# Reusable Classes
+--------------------------------------------------------------*/
+.center {
+    text-align: center;
 }
 
-/* Optional: Add some spacing between sections and articles */
-section, article {
-    margin-bottom: 20px; /* Add space between sections and articles */
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        border-right: none;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+    }
+
+    nav ul {
+        padding-left: 10px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
 }
 
-/* Add some styling for the images in the aside */
-aside img {
-    width: 100%; /* Make images responsive */
-    max-width: 200px; /* Limit maximum width of the images */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add spacing below images */
-}
