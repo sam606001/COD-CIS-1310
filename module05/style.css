@@ -1,103 +1,68 @@
-/*--------------------------------------------------------------
-# Universal
---------------------------------------------------------------*/
-html * {
-    box-sizing: border-box;
-}
-
 /* Remove margin from the body */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
 }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
+/* Style the navigation list and bullets */
 nav ul {
-    list-style-type: square; /* Change bullet style */
+    list-style-type: square; /* Change the list bullets to squares */
+    padding-left: 20px; /* Add some padding for better positioning */
 }
 
-nav ul li {
-    color: blue; /* Bullet color */
+nav li {
+    color: #333; /* Set text color for list items */
 }
 
-/* Navigation link colors */
-nav a:link {
-    color: darkblue;
+/* Change the color of the bullets */
+nav li::marker {
+    color: #ff6347; /* Change bullet color to tomato */
 }
 
-nav a:visited {
-    color: purple;
-}
-
-nav a:hover {
-    color: red;
+/* Change the nav link colors for different states */
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #0073e6; /* Set the link color */
 }
 
 nav a:active {
-    color: orange;
+    color: #ff6347; /* Active link color */
 }
 
-/*--------------------------------------------------------------
-# Header Area
---------------------------------------------------------------*/
+nav a:hover {
+    color: #32cd32; /* Hover link color */
+}
+
+nav a:visited {
+    color: #8a2be2; /* Visited link color */
+}
+
+/* Header Styling */
 header {
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    background-color: #4CAF50; /* Set a different color for the header */
+    color: white; /* Set text color to white */
+    padding: 20px; /* Add padding to the header */
 }
 
-/*--------------------------------------------------------------
-# Content Area
---------------------------------------------------------------*/
+/* Main section styling */
 main {
-    width: calc(70% - 1px); /* 70% width minus border */
-    float: left; /* Align to the left */
-    padding: 1rem;
-    border-right: 1px solid black; /* 1px right border */
-    color: #666;
-    font-size: 18px;
+    width: calc(70% - 1px); /* Set width of main to 70% minus 1px for border */
+    float: left; /* Align the element to the left */
+    padding: 1rem; /* Add padding inside the main element */
+    border-right: 1px solid #ccc; /* Add 1px border only on the right side */
 }
 
-/* Style the button */
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-button {
-    background-color: #008CBA;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0073a8;
-}
-
-/*--------------------------------------------------------------
-# Aside (Sidebar)
---------------------------------------------------------------*/
+/* Aside section styling */
 aside {
-    width: 30%; /* Set aside to take 30% width */
-    float: right; /* Align to the right */
-    padding: 1rem;
+    width: 30%; /* Set aside width to 30% */
+    float: right; /* Align the element to the right */
+    padding: 1rem; /* Add padding inside the aside element */
 }
 
-/*--------------------------------------------------------------
-# Footer Area
---------------------------------------------------------------*/
+/* Footer Styling */
 footer {
-    background-color: #4CAF50; /* Same as header */
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    clear: both; /* Ensure footer is below the floated content */
+    background-color: #4CAF50; /* Same background color as the header */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add padding to the footer */
+    text-align: center; /* Center-align the footer content */
 }
