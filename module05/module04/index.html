@@ -4,45 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What an Ugly Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Correct CSS link -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
+
     <header>
         <h1>What an Ugly Page</h1>
         <p>There's plenty of room for growth</p>
     </header>
+
     <nav>
         <ul>
-            <li><a href="https://www.example1.com" target="_blank" rel="nofollow">Example 1</a></li>
-            <li><a href="https://www.example2.com" target="_blank" rel="nofollow">Example 2</a></li>
-            <li><a href="https://www.example3.com" target="_blank" rel="nofollow">Example 3</a></li>
-            <li><a href="https://www.example4.com" target="_blank" rel="nofollow">Example 4</a></li>
+            <li><a href="https://www.example.com" target="_blank" rel="nofollow">Example Link 1</a></li>
+            <li><a href="https://www.example.com" target="_blank" rel="nofollow">Example Link 2</a></li>
+            <li>
+                <a href="https://www.example.com" target="_blank" rel="nofollow">Example Link 3</a>
+                <ul>
+                    <li><a href="https://www.example.com" target="_blank" rel="nofollow">Sub-link 1</a></li>
+                    <li><a href="https://www.example.com" target="_blank" rel="nofollow">Sub-link 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://www.example.com" target="_blank" rel="nofollow">Example Link 4</a>
+                <ul>
+                    <li><a href="https://www.example.com" target="_blank" rel="nofollow">Sub-link 3</a></li>
+                    <li><a href="https://www.example.com" target="_blank" rel="nofollow">Sub-link 4</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
+
     <main>
         <section class="primary">
             <article>
-                <h2>Article Title</h2>
-                <p>Content about my topic of interest, including <strong>important</strong> and <em>emphasized</em> words.</p>
+                <h2>Topic of Interest</h2>
+                <p>This is where information about your selected topic will go. Use <strong>strong</strong> for emphasis and <em>em</em> for more subtle emphasis.</p>
             </article>
-            <section>
-                <article>
-                    <h2>Second Article</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article>
-                    <h2>Third Article</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-            </section>
         </section>
+
+        <section>
+            <article>
+                <h2>Article 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat felis quis nisi pretium, vel aliquet mauris efficitur.</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Article 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec erat quis velit consectetur iaculis.</p>
+            </article>
+        </section>
+
         <aside>
-            <p>Ad content for a fake product.</p>
-            <img src="images/fake-product.jpg" alt="Fake product">
+            <h2>Ads</h2>
+            <div>
+                <img src="images/fake-product1.jpeg" alt="Fake Product 1" width="200" height="auto">
+                <p>Buy Fake Product 1 Now!</p>
+            </div>
+            <div>
+                <img src="images/fake-product2.jpeg" alt="Fake Product 2" width="200" height="auto">
+                <p>Get Fake Product 2 at a discounted price!</p>
+            </div>
         </aside>
     </main>
+
     <footer>
-        <p>&copy; 2025 Saman Husain</p>
+        <p>&#169; Saman Husain 2025</p> <!-- Copyright symbol and your name -->
     </footer>
+
 </body>
 </html>
