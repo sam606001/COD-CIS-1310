@@ -3,66 +3,80 @@ body {
     margin: 0;
 }
 
-/* Style the navigation list and bullets */
+/* Change the visible bullets from the navigation to something other than a circle */
 nav ul {
-    list-style-type: square; /* Change the list bullets to squares */
-    padding-left: 20px; /* Add some padding for better positioning */
+    list-style-type: square; /* You can choose 'square', 'disc', or another type */
 }
 
-nav li {
-    color: #333; /* Set text color for list items */
+/* Change the color of the bullets to be different from the text */
+nav ul li {
+    color: #333; /* Set text color */
 }
 
-/* Change the color of the bullets */
-nav li::marker {
-    color: #ff6347; /* Change bullet color to tomato */
+/* Change the nav link colors for active, hover, and visited states */
+nav ul li a {
+    color: #0066cc; /* Default link color (blue) */
+    text-decoration: none; /* Remove underline from links */
 }
 
-/* Change the nav link colors for different states */
-nav a {
-    text-decoration: none; /* Remove underline */
-    color: #0073e6; /* Set the link color */
+nav ul li a:active {
+    color: #ff0000; /* Active link color (red) */
 }
 
-nav a:active {
-    color: #ff6347; /* Active link color */
+nav ul li a:hover {
+    color: #ff6600; /* Hover link color (orange) */
 }
 
-nav a:hover {
-    color: #32cd32; /* Hover link color */
+nav ul li a:visited {
+    color: #999999; /* Visited link color (gray) */
 }
 
-nav a:visited {
-    color: #8a2be2; /* Visited link color */
-}
-
-/* Header Styling */
+/* Set the header to be a different color than the main */
 header {
-    background-color: #4CAF50; /* Set a different color for the header */
-    color: white; /* Set text color to white */
-    padding: 20px; /* Add padding to the header */
+    background-color: #4CAF50; /* Green background for header */
+    padding: 20px;
+    color: white; /* White text in the header */
 }
 
-/* Main section styling */
+/* Give the main element the following settings */
 main {
-    width: calc(70% - 1px); /* Set width of main to 70% minus 1px for border */
-    float: left; /* Align the element to the left */
-    padding: 1rem; /* Add padding inside the main element */
-    border-right: 1px solid #ccc; /* Add 1px border only on the right side */
+    width: calc(70% - 1px); /* 70% width minus 1px for the right border */
+    float: left; /* Align the main content to the left */
+    padding: 1rem; /* Add padding to the main content */
+    border-right: 1px solid #ccc; /* Add a right border */
 }
 
-/* Aside section styling */
+/* Give the aside elements the following settings */
 aside {
-    width: 30%; /* Set aside width to 30% */
-    float: right; /* Align the element to the right */
-    padding: 1rem; /* Add padding inside the aside element */
+    width: 30%; /* Set aside to take up 30% of the width */
+    float: right; /* Align aside to the right */
+    padding: 1rem; /* Add padding to the aside */
 }
 
-/* Footer Styling */
+/* Footer settings */
 footer {
-    clear: both; /* Ensure footer is below the floated content */
     background-color: #4CAF50; /* Same background color as the header */
-    color: white; /* Set text color to white */
-    padding: 10px; /* Add padding to the footer */
-    text-align: center; /* Center-align the footer content */
+    text-align: center; /* Center the text in the footer */
+    padding: 10px;
+    color: white; /* White text in the footer */
+}
+
+/* Clear the float so the page layout isn't disrupted */
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Optional: Add some spacing between sections and articles */
+section, article {
+    margin-bottom: 20px; /* Add space between sections and articles */
+}
+
+/* Add some styling for the images in the aside */
+aside img {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Limit maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below images */
 }
