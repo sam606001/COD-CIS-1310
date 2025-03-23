@@ -1,0 +1,51 @@
+/* Fix header positioning */
+header {
+  position: fixed; /* Fix it to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans across the entire page */
+  background-color: #fff; /* Or any color you want */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for better visibility */
+  padding: 10px 0; /* Adjust as needed */
+}
+
+/* Add some padding to avoid overlap with main content */
+body {
+  margin-top: 60px; /* Adjust based on your header height */
+}
+
+/* Navigation styling */
+nav {
+  display: flex; /* Align links horizontally */
+  justify-content: center; /* Center links horizontally */
+  align-items: center; /* Center links vertically */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px; /* Space out the list items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #000; /* Default link color */
+  font-size: 16px;
+}
+
+/* Call to Action button hover effect */
+button.cta:hover {
+  background-color: blue; /* Primary color when hovered */
+  color: white; /* Ensure text is readable */
+}
+
+/* Ensure header is across the entire page width */
+header {
+  width: 100%;
+}
